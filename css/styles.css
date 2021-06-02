@@ -13,6 +13,7 @@
 *::after {
   box-sizing: border-box;
 }
+
 /*  Typography  */
 html {
   font-size: 62.5%;
@@ -112,6 +113,7 @@ a {
 }
 .badge--small {
   font-size: 1.6rem;
+  padding: 0.8rem 1.2rem;
 }
 
 @media screen and (min-width: 1024px) {
@@ -288,4 +290,64 @@ a {
 .card--secondary .card__header {
   background: var(--color-secondary);
   color: #fff;
+}
+
+.card--primary .badge--primary {
+  background: #126de4;
+}
+.card--secondary .badge--secondary {
+  background: #02cdf1;
+}
+
+/* Plans */
+
+.plan__label {
+  color: #fff;
+  font-size: 2.4rem;
+  font-weight: 500;
+  margin-top: 0;
+}
+
+.plan__price {
+  font-size: 6rem;
+}
+.plan__billing-cycle {
+  font-size: 2rem;
+  opacity: 80%;
+  padding-right: 1.5rem;
+}
+
+.plan__description {
+  display: block;
+  font-size: 2rem;
+  margin-top: 2.5rem;
+  opacity: 80%;
+}
+
+.plan__details {
+  color: var(--color-heading);
+}
+
+.plan .list__item {
+  letter-spacing: 2px;
+  margin-bottom: 2rem;
+  padding-left: 5px;
+}
+
+@media screen and (min-width: 1024px) {
+  .plan__label {
+    font-size: 1.4rem;
+  }
+
+  .plan__price {
+    font-size: 5rem;
+  }
+
+  .plan__billing-cycle {
+    font-size: 1.6rem;
+  }
+
+  .plan__description {
+    font-size: 1.7rem;
+  }
 }
