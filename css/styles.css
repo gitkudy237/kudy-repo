@@ -319,6 +319,13 @@ a {
 }
 
 /* Plans */
+.plan {
+  transition: transform 0.2s ease-out;
+}
+
+.plan:hover {
+  transform: scale(1.05);
+}
 
 .plan__label {
   color: #fff;
@@ -364,6 +371,12 @@ a {
   position: absolute;
   top: -7px;
   right: 5%;
+}
+.plan--popular {
+  transform: scale(1.05);
+}
+.plan--popular:hover {
+  transform: scale(1.13);
 }
 
 @media screen and (min-width: 1024px) {
@@ -691,4 +704,15 @@ a {
       minmax(100px, 1fr)
     ); /* this makes the elements fit automatically and they have a min and max width */
   }
+}
+
+/* Plan Block */
+
+.block-plans .grid {
+  gap: 6rem 4rem;
+}
+
+.block-plans .card {
+  max-width: 500px;
+  margin: 0 auto;
 }
