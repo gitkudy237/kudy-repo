@@ -605,6 +605,10 @@ a {
   transition: all 0.3s;
 }
 
+.block--dark .collapsible__content {
+  color: #7b858b;
+}
+
 .collapsible--expanded .collapsible__icon {
   transform: rotate(0deg);
 }
@@ -819,5 +823,92 @@ a {
   .panel__image > img {
     width: auto;
     max-width: 660px;
+  }
+}
+
+/* Footer section */
+
+.footer {
+  background: #232323;
+}
+.footer a {
+  color: #777;
+  transition: color 0.25s;
+}
+
+.footer a:hover {
+  color: #fff;
+}
+
+.footer__section {
+  padding: 2rem;
+  border-bottom: 1px solid #393939;
+}
+
+.footer__section li {
+  margin: 0;
+}
+
+.footer__heading {
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.footer .collapsible__content {
+  line-height: 2;
+}
+
+.footer__brand {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.footer__brand img {
+  max-width: 200px;
+  width: 100%;
+}
+
+.footer__copyright {
+  font-size: 2.1rem;
+  color: #fff;
+  opacity: 0.3;
+}
+
+@media screen and (min-width: 768px) {
+  .footer__sections {
+    grid-template-columns: repeat(
+      auto-fit,
+      minmax(10rem, 1fr)
+    ); /* this makes the elements fit automatically and they have a min and max width */
+  }
+
+  .footer .collapsible__icon {
+    display: none;
+  }
+
+  .footer .collapsible__content {
+    opacity: 1;
+    max-height: 100vh;
+  }
+
+  .footer .collapsible__heading {
+    font-size: 1.5rem;
+  }
+
+  .footer__brand {
+    order: -1; /*  this puts an element before the first in our markup */
+    margin-top: 1rem;
+  }
+
+  .footer__copyright {
+    font-size: 1.5rem;
+  }
+
+  .footer__section {
+    border: 0;
+  }
+
+  .footer a {
+    font-size: 1.5rem;
   }
 }
